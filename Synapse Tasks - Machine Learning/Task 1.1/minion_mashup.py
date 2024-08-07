@@ -39,7 +39,6 @@ for each_pair in pairs:
 unique_pairs = set()
 final = []
 for pair in possible_dj_pairs:
-    # Sort the pair to handle (a, b) and (b, a) as duplicates
     sorted_pair = tuple(sorted(pair[:2]))
     if sorted_pair not in unique_pairs:
         unique_pairs.add(sorted_pair)
