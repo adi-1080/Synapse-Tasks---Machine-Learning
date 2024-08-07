@@ -44,10 +44,7 @@ for pair in possible_dj_pairs:
         unique_pairs.add(sorted_pair)
         final.append(pair)
 print(final)
-
-# Sort the final list by overlap percentage (descending) and DJ names (alphabetical)
 final_sorted = sorted(final, key=lambda x: (-x[2], sorted(x[:2])))
-
 print(final_sorted)
 
 
